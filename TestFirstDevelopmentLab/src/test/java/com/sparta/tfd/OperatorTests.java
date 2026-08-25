@@ -53,12 +53,10 @@ public class OperatorTests {
     }
 
     @Test
-    @DisplayName("Compare NaN with NaN.")
+    @DisplayName("Check if NaN >= NaN.")
     public void op_test_5()
     {
-        double nan = Double.NaN;
-
-        Assertions.assertTrue(false == Methods.greaterEqual(nan, nan));
+        Assertions.assertTrue(false == Methods.greaterEqual(Double.NaN, Double.NaN));
     }
 
     @ParameterizedTest
