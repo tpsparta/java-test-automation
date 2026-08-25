@@ -10,14 +10,16 @@ public class FilmClassificationTests {
     @ParameterizedTest
     @DisplayName("Film classification tests")
     @CsvSource({
-            "11, \"U, PG & 12 films are available.\"",
-            "12, \"U, PG, 12 & 15 films are available.\"",
-            "14, \"U, PG, 12 & 15 films are available.\"",
-            "15, \"All films are available.\""
+            "11, U PG & 12 films are available.",
+            "12, U PG 12 & 15 films are available.",
+            "14, U PG 12 & 15 films are available.",
+            "15, All films are available."
     })
     public void fc_test_1(int age, String expectedRes)
     {
-        Assertions.assertTrue(expectedRes == FilmClassification.getClassificationsByAge(age));
+
+        System.out.println(FilmClassification.getClassificationsByAge(age));
+        Assertions.assertTrue(expectedRes.equals(FilmClassification.getClassificationsByAge(age)));
     }
 
 }

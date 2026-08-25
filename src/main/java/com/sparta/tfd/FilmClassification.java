@@ -7,11 +7,11 @@ public class FilmClassification {
         String result;
         if (ageOfViewer < 12)
         {
-            result = "U, PG & 12 films are available.";
+            result = "U PG & 12 films are available.";
         }
         else if (ageOfViewer < 15)
         {
-            result = "U, PG, 12 & 15 films are available.";
+            result = "U PG 12 & 15 films are available.";
         }
         else
         {
