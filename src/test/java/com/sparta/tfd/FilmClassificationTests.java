@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.ValueSource;
+//import org.junit.jupiter.params.provider.ValueSource;
 
 public class FilmClassificationTests {
 
@@ -19,7 +19,7 @@ public class FilmClassificationTests {
     {
 
         System.out.println(FilmClassification.getClassificationsByAge(age));
-        Assertions.assertTrue(expectedRes.equals(FilmClassification.getClassificationsByAge(age)));
+        Assertions.assertEquals(expectedRes, FilmClassification.getClassificationsByAge(age));
     }
 
 }
