@@ -19,7 +19,6 @@ public class FilmClassificationTests {
     })
     public void fc_test_1(int age, String expectedRes)
     {
-
         System.out.println(FilmClassification.getClassificationsByAge(age));
         Assertions.assertEquals(expectedRes, FilmClassification.getClassificationsByAge(age));
     }
